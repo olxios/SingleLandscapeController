@@ -290,6 +290,7 @@
 				B28BDDE91D1866E100F071FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
