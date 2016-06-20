@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mih-tG-RVH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FPY-P4-Vjs">
+            <objects>
+                <viewController id="Mih-tG-RVH" customClass="ViewController" customModule="LandscapeController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eBa-7z-LkR"/>
+                        <viewControllerLayoutGuide type="bottom" id="z6U-eh-cla"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4D-iT-Xfx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-4J-mdU">
+                                <rect key="frame" x="274" y="285" width="53" height="30"/>
+                                <state key="normal" title="Present">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K0w-Po-7r3" kind="presentation" id="ap9-TZ-N3I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wQ4-4J-mdU" secondAttribute="centerX" id="Fqc-Dg-3Ky"/>
+                            <constraint firstAttribute="centerY" secondItem="wQ4-4J-mdU" secondAttribute="centerY" id="paF-pF-ozq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flh-7m-imU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="-414"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="9Q7-kI-cG4">
+            <objects>
+                <viewController id="K0w-Po-7r3" customClass="SecondViewController" customModule="LandscapeController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XPO-Oy-N6r"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sfn-zQ-iin"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5rZ-Gf-exR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="wH7-fG-OFG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTl-bS-1em">
+                                <rect key="frame" x="533" y="21" width="54" height="30"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss" destination="K0w-Po-7r3" eventType="touchUpInside" id="2cX-aB-ZGW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wH7-fG-OFG" firstAttribute="top" secondItem="5rZ-Gf-exR" secondAttribute="top" id="4Cg-Af-pw7"/>
+                            <constraint firstAttribute="trailing" secondItem="pTl-bS-1em" secondAttribute="trailing" constant="13" id="4Zi-IF-4r5"/>
+                            <constraint firstAttribute="trailing" secondItem="wH7-fG-OFG" secondAttribute="trailing" id="831-xA-SZd"/>
+                            <constraint firstItem="pTl-bS-1em" firstAttribute="top" secondItem="5rZ-Gf-exR" secondAttribute="top" constant="21" id="PC3-ma-z7d"/>
+                            <constraint firstAttribute="bottom" secondItem="wH7-fG-OFG" secondAttribute="bottom" id="TbC-cJ-0ar"/>
+                            <constraint firstItem="wH7-fG-OFG" firstAttribute="leading" secondItem="5rZ-Gf-exR" secondAttribute="leading" id="YRE-Ch-8d7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bG0-Nc-hfa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clouds" width="640" height="360"/>
+    </resources>
+</document>
